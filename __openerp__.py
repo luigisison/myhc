@@ -21,12 +21,12 @@
 {
     'name' : 'Healthcare',
     'version' : '1.1',
-    'author' : 'Pragmatic Techsoft Pvt Ltd',
+    'author' : 'Luigi Sison',
     'category' : 'Healthcare',
     'description' : """
-    Heathcare module to maintain the Patients records, Deceases, and many more... 
+    Heathcare module to maintain the Patients records,  
     """,
-    'website': 'https://www.pragtech.co.in',
+    'website': 'https://www.moxylus.com',
     'depends' : ['base'],
     'data': [
          'partner_view.xml',
@@ -40,5 +40,3 @@
     'installable': True,
     'auto_install': False,
 }
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
