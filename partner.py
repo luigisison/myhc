@@ -86,7 +86,7 @@ class hc_patient_address(models.Model):
     @api.constrains('start_date', 'end_date')
     def _check_end_date(self):
         if self.end_date and self.end_date < self.start_date:            
-            raise Warning(_("End Date should be grater than Start Date"))
+            raise Warning(_("End Date should be greater than Start Date"))
         
 class hc_ethnicity(models.Model):
     _name = 'hc.ethnicity'
