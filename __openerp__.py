@@ -24,7 +24,7 @@
     'author' : 'Luigi Sison',
     'category' : 'Healthcare',
     'description' : """
-    Heathcare module to maintain the Patients records,  
+    Module to maintain administrative aspects of healthcare like names and addresses.
     """,
     'website': 'https://www.moxylus.com',
     'depends' : ['base'],
@@ -40,4 +40,5 @@
     'installable': True,
     'auto_install': False,
 }
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
