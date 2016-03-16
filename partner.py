@@ -116,8 +116,7 @@ class res_partner(osv.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
      
-    gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')], /
-    help="The gender of a person used for administrative purposes.")
+    gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')])
     address_ids = fields.One2many('hc.patient.address','patient_id', 'Addresses')
     is_multiple_birth = fields.Boolean('Is Multiple Birth')
     multiple_birth_count = fields.Integer('Multiple Birth Count')
