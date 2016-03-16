@@ -116,12 +116,7 @@ class res_partner(osv.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
      
-    gender = fields.Selection([('male','Male'), ('female','Female'), ('undifferentiated','Undifferentiated'), ('unknown','Unknown')])
-    birth_date = fields.Date('Birth Date')
-    race_id = fields.Many2one('hc.race', 'Race')
-    ethnicity_id = fields.Many2one('hc.ethnicity', 'Ethnicity')
-    is_deceased = fields.Boolean('is Deceased?')
-    deceased_date = fields.Date('Decease Date')
+    gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')], help="The gender of a person used for administrative purposes.")
     address_ids = fields.One2many('hc.patient.address','patient_id', 'Addresses')
     is_multiple_birth = fields.Boolean('Is Multiple Birth')
     multiple_birth_count = fields.Integer('Multiple Birth Count')
