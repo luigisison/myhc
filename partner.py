@@ -121,6 +121,8 @@ class res_partner(osv.Model):
     race_id = fields.Many2one('hc.race', 'Race')
     ethnicity_id = fields.Many2one('hc.ethnicity', 'Ethnicity')
     address_ids = fields.One2many('hc.patient.address','patient_id', 'Addresses')
+    is_deceased = fields.Boolean('is Deceased?')
+    deceased_date = fields.Date('Decease Date')
     is_multiple_birth = fields.Boolean('Is Multiple Birth')
     multiple_birth_count = fields.Integer('Multiple Birth Count')
     multiple_birth_order = fields.Integer('Multiple Birth Order')
