@@ -65,7 +65,7 @@ class hc_patient_address(models.Model):
     use = fields.Selection([('home','Home'), ('work','Work'), ('temp','Temp'), ('old','Old')], 'Use', required=True)
     is_preferred = fields.Boolean('Is Preferred?')
     acive = fields.Boolean('Is Active?', default=True)
-    patient_id = fields.Many2one('res.patient', 'Patient')
+    patient_id = fields.Many2one('hc.res.patient', 'Patient')
     start_date = fields.Date('Start Date', required=True, default=time.strftime('%Y-%m-%d') )
     end_date = fields.Date('End Date')
     
@@ -113,7 +113,7 @@ class hc_partner_type(models.Model):
     name = fields.Char('Name', size=50, required=True)
 
 class res_patient(osv.Model):
-    _name = 'res.patient'
+    _name = 'hc.res.patient'
     _inherit = 'res.partner'
      
     gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')], size=10)
