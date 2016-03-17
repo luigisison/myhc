@@ -80,7 +80,7 @@
             <field name="name">hc.city.tree</field>
             <field name="model">hc.country.city</field>
             <field name="arch" type="xml">
-                <tree string="Country City">
+                <tree string="City">
                     <field name="name"/>
                     <field name="code"/>
                     <field name="state_id"/>
@@ -103,7 +103,7 @@
 		</record>
 		
 		<record id="action_hc_city_action" model="ir.actions.act_window">
-			<field name="name">Country City</field>
+			<field name="name">City</field>
 			<field name="type">ir.actions.act_window</field>
 			<field name="res_model">hc.country.city</field>
 			<field name="view_type">form</field>
@@ -111,12 +111,12 @@
 			<field name="search_view_id" ref="view_hc_city_filter"/>
 			<field name="help" type="html">
 				<p class="oe_view_nocontent_create">
-	                Click to add a city.
+	                Click to add a City.
 				</p>
 			</field>
 		</record>
 		
-		<menuitem id="menu_base_hc_city" parent="menu_base_hc_config" name="Country City" action="action_hc_city_action" sequence="2" />
+		<menuitem id="menu_base_hc_city" parent="menu_base_hc_config" name="City" action="action_hc_city_action" sequence="2" />
 
 
 		<!-- Postal Code views -->
@@ -179,12 +179,12 @@
             <field name="search_view_id" ref="view_hc_postal_code_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Click to add a Postal Codes.
+                Click to add a Postal Code.
               </p>
             </field>
         </record>
 		
-		<menuitem id="menu_base_hc_postal_code" parent="menu_base_hc_config" name="Country Postal Code" action="action_hc_postal_code_action" sequence="3" />
+		<menuitem id="menu_base_hc_postal_code" parent="menu_base_hc_config" name="Postal Code" action="action_hc_postal_code_action" sequence="3" />
 
 
 		<!-- 
@@ -248,7 +248,7 @@
             <field name="search_view_id" ref="view_hc_ethnicity_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Click to add a Ethnicity.
+                Click to add an Ethnicity.
               </p>
             </field>
         </record>
@@ -511,7 +511,7 @@
             <field name="search_view_id" ref="view_hc_patient_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Click to add a patient in your address book.
+                Click to add a Patient.
               </p><p>
                 Odoo helps you easily track all activities related to
                 a Patient; discussions, history,
