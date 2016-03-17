@@ -19,7 +19,7 @@
 #
 ##############################################################################
 {
-    'name' : 'Healthcare',
+    'name' : 'Healthcare Administration',
     'version' : '1.1',
     'author' : 'Luigi Sison',
     'category' : 'Healthcare',
