@@ -47,6 +47,47 @@
             </field>
         </record>
 	
+	<record id="view_hc_address_tree" model="ir.ui.view">
+            <field name="name">hc.address.tree</field>
+            <field name="model">hc.address</field>
+            <field name="arch" type="xml">
+                <tree string="Address">
+                    <field name="street"/>
+                    <field name="street2"/>
+                    <field name="city_id"/>
+                    <field name="state_id"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+       	</record>
+		
+		<record id="view_hc_address_filter" model="ir.ui.view">
+			<field name="name">hc.address.select</field>
+        	<field name="model">hc.address</field>
+			<field name="arch" type="xml">
+				<search string="Search Address">
+					<field name="street" domain="[('name','ilike',self),"/>
+					<field name="city_id" domain="[('code','ilike',self),"/>
+					<field name="state_id" domain="[('state_id','ilike',self),"/>
+					<field name="country_id" domain="[('country_id','ilike',self),"/>
+				</search>
+			</field>
+		</record>
+		
+		<record id="action_hc_address_action" model="ir.actions.act_window">
+			<field name="name">Address</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">hc.address</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_hc_address_filter"/>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+	                Click to add an Address.
+				</p>
+			</field>
+		</record>
+		
 	<menuitem id="menu_base_hc_address" parent="menu_base_hc_config" name="Address" action="action_hc_address_action" sequence="1" />					
 	
 		<!-- 
