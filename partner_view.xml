@@ -46,7 +46,9 @@
                 </form>
             </field>
         </record>
-						
+	
+	<menuitem id="menu_base_hc_address" parent="menu_base_hc_config" name="Address" action="action_hc_address_action" sequence="1" />					
+	
 		<!-- 
 		=====================================================
 				city views
