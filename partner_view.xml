@@ -62,7 +62,7 @@
         	<field name="model">hc.address</field>
 			<field name="arch" type="xml">
 				<search string="Search Address">
-					<field name="street" domain="[('street','ilike',self),"/>
+					<field name="street" domain="['|',('street','ilike',self),('street2','ilike',self)"/>
 					<field name="city_id" domain="[('city_id','ilike',self),"/>
 					<field name="postal_code_id" domain="[('postal_code_id','ilike',self),"/>
 					<field name="state_id" domain="[('state_id','ilike',self),"/>
