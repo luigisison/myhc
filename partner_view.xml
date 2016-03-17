@@ -511,7 +511,7 @@
             <field name="search_view_id" ref="view_hc_patient_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Click to add a contact in your address book.
+                Click to add a patient in your address book.
               </p><p>
                 Odoo helps you easily track all activities related to
                 a Patient; discussions, history,
