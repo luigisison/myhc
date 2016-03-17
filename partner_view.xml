@@ -371,7 +371,7 @@
 		 -->
 		<record id="view_hc_patient_tree" model="ir.ui.view">
             <field name="name">hc.patient.tree</field>
-            <field name="model">hc.patient</field>
+            <field name="model">hc.res.patient</field>
             <field name="arch" type="xml">
                 <tree string="Contacts">
                     <field name="display_name"/>
@@ -382,7 +382,7 @@
             
 		<record id="view_hc_patient_form" model="ir.ui.view">
             <field name="name">res.hc.patient.form</field>
-            <field name="model">hc.patient</field>
+            <field name="model">hc.res.patient</field>
             <field name="arch" type="xml">
                 <form string="Patients">
                 <sheet>
@@ -456,7 +456,7 @@
 		            
         <record id="view_hc_patient_filter" model="ir.ui.view">
             <field name="name">hc.patient.select</field>
-            <field name="model">hc.patient</field>
+            <field name="model">hc.res.patient</field>
             <field name="arch" type="xml">
                 <search string="Search Patient">
                    <field name="name"
