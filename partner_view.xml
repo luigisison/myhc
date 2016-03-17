@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openerp>
-    <data>
-
+<?xml version="1.0" encoding="utf-8"?>		
+<openerp>		
+	<data>	
+		
 		<!-- Top menu items -->
 		<menuitem name="Administrative" id="menu_base_hc_administrative" sequence="2"/>            
-        <menuitem name="Clinical" id="menu_base_hc_clinical" sequence="3"/> 
+		<menuitem name="Clinical" id="menu_base_hc_clinical" sequence="3"/> 
 		<menuitem name="Financial" id="menu_base_hc_financial" sequence="4"/>
 		<menuitem name="Infrastructure" id="menu_base_hc_infrastructure" sequence="5"/>
-
+		
 		<!-- Sub menu items -->
 		<menuitem id="menu_base_hc_basic_info" parent="menu_base_hc_administrative" name="Basic Information" sequence="1" />
 		<menuitem id="menu_base_hc_config" parent="menu_base_hc_administrative" name="Configuration" sequence="2" />
+
 		
 
         <!-- 
