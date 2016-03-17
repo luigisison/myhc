@@ -55,6 +55,7 @@
                     <field name="street"/>
                     <field name="street2"/>
                     <field name="city_id"/>
+                    <field name="postal_code_id"/>
                     <field name="state_id"/>
                     <field name="country_id"/>
                 </tree>
