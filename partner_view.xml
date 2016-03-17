@@ -119,11 +119,7 @@
 		<menuitem id="menu_base_hc_city" parent="menu_base_hc_config" name="Country City" action="action_hc_city_action" sequence="2" />
 
 
-		<!-- 
-		=====================================================
-				Postal Code views
-		=====================================================		
-		 -->
+		<!-- Postal Code views -->
 		 
 		<record id="view_hc_postal_code_form" model="ir.ui.view">
             <field name="name">res.hc.postal.code.form</field>
