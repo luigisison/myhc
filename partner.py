@@ -116,7 +116,7 @@ class res_partner(osv.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
      
-    gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')])
+    gender = fields.Selection([('male','Male'), ('female','Female'), ('other','Other'), ('unknown','Unknown')], size=10)
     birth_date = fields.Date('Birth Date')
     race_id = fields.Many2one('hc.race', 'Race')
     ethnicity_id = fields.Many2one('hc.ethnicity', 'Ethnicity')
