@@ -35,7 +35,6 @@ class hc_country_postal_code(models.Model):
 class hc_address(models.Model):
     _name = 'hc.address'
     
-    name = fields.Char('Name', size=50)
     street = fields.Char('Street', size=250)
     street2 = fields.Char('Street2', size=250)
     city_id = fields.Many2one('hc.country.city', 'City')
