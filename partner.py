@@ -64,7 +64,7 @@ class hc_patient_address(models.Model):
     address_id = fields.Many2one('hc.address', 'Address', required=True)
     use = fields.Selection([('home','Home'), ('work','Work'), ('temp','Temp'), ('old','Old')], 'Use', required=True)
     is_preferred = fields.Boolean('Is Preferred?')
-    acive = fields.Boolean('Is Active?', default=True)
+    active = fields.Boolean('Is Active?', default=True)
     patient_id = fields.Many2one('hc.res.patient', 'Patient')
     start_date = fields.Date('Start Date', required=True, default=time.strftime('%Y-%m-%d') )
     end_date = fields.Date('End Date')
