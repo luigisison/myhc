@@ -13,7 +13,7 @@ class hc_country_city(models.Model):
     postal_code_ids = fields.Many2many('hc.country.postal.code','hc_country_city_postal_code_rel', 'city_id', 'postal_code_id', string="Postal Codes")
     
     @api.onchange('state_id')
-    def _onchnage_state_id(self):
+    def _onchange_state_id(self):
         self.country_id = self.state_id.country_id.id
         
     
@@ -29,7 +29,7 @@ class hc_country_postal_code(models.Model):
     _rec_name = 'code'
 
     @api.onchange('state_id')
-    def _onchnage_state_id(self):
+    def _onchange_state_id(self):
         self.country_id = self.state_id.country_id.id
 
 class hc_address(models.Model):
@@ -43,7 +43,7 @@ class hc_address(models.Model):
     country_id = fields.Many2one('res.country', 'Country',)
 
     @api.onchange('state_id')
-    def _onchnage_state_id(self):
+    def _onchange_state_id(self):
         self.country_id = self.state_id.country_id.id
     
 
