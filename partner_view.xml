@@ -54,8 +54,8 @@
     							<field name="city_id"/>			
     						</group>				
     						<group>				
-    							<field name="state_id"/>			
     							<field name="postal_code_id"/>			
+    							<field name="state_id"/>			
     							<field name="country_id"/>			
     						</group>			
 						</group>					
