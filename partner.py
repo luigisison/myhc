@@ -126,7 +126,7 @@ class res_patient(osv.Model):
     is_multiple_birth = fields.Boolean('Is Multiple Birth')
     multiple_birth_count = fields.Integer('Multiple Birth Count')
     multiple_birth_order = fields.Integer('Multiple Birth Order')
-    patient = fields.Boolean('Patient', help="Check this box if this contact is an Employee.")
+    <!-- patient = fields.Boolean('Patient', help="Check this box if this contact is an Employee.") -->
     
 ## objects are created only for view purpose    
     
