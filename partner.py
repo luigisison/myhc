@@ -35,7 +35,7 @@ class hc_country_postal_code(models.Model):
 class hc_address(models.Model):
     _name = 'hc.address'
     
-    name = fields.Char('Name', size=50, required=True)
+    name = fields.Char('Name', size=50)
     street = fields.Char('Street', size=250)
     street2 = fields.Char('Street2', size=250)
     city_id = fields.Many2one('hc.country.city', 'City')
@@ -64,7 +64,7 @@ class hc_patient_address(models.Model):
     address_id = fields.Many2one('hc.address', 'Address', required=True)
     use = fields.Selection([('home','Home'), ('work','Work'), ('temp','Temp'), ('old','Old')], 'Use', required=True)
     is_preferred = fields.Boolean('Is Preferred?')
-    active = fields.Boolean('Is Active?', default=True)
+    is_active = fields.Boolean('Is Active?', default=True)
     patient_id = fields.Many2one('hc.res.patient', 'Patient')
     start_date = fields.Date('Start Date', required=True, default=time.strftime('%Y-%m-%d') )
     end_date = fields.Date('End Date')
